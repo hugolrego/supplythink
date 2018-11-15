@@ -18,6 +18,11 @@ class WelcomeController {
         return "flot";
     }    
 
+    @RequestMapping(method=RequestMethod.GET, path= "/Navigator")
+    public String navigator() {
+        return "navigator";
+    }    
+    
     @RequestMapping(method=RequestMethod.GET, path= "/error")
     public String error() {
         return "error";
