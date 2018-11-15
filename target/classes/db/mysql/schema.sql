@@ -57,6 +57,19 @@ CREATE TABLE  visits (
   description VARCHAR(255)
 );
 
+DROP TABLE stock_location_groups;
+
+CREATE TABLE stock_location_groups (
+  id int identity (1,1) primary key,
+  name VARCHAR(80)
+);
+
+DROP TABLE stock_location;
+
+CREATE TABLE stock_location (
+  id int identity (1,1) primary key,
+  description VARCHAR(80)
+);
 
 
 /**

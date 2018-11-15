@@ -52,6 +52,23 @@ INSERT INTO visits VALUES (8, '2011-03-04', 'rabies shot');
 INSERT INTO visits VALUES (8, '2009-06-04', 'neutered');
 INSERT INTO visits VALUES (7, '2008-09-04', 'spayed');
 
+
+INSERT INTO stock_location_groups VALUES ('LE Grupo 1');
+INSERT INTO stock_location_groups VALUES ('LE Grupo 2');
+INSERT INTO stock_location_groups VALUES ('LE Grupo 3');
+INSERT INTO stock_location_groups VALUES ('LE Grupo 4');
+INSERT INTO stock_location_groups VALUES ('LE Grupo 5');
+INSERT INTO stock_location_groups VALUES ('LE Grupo 6');
+
+INSERT INTO stock_location VALUES ('LE  1');
+INSERT INTO stock_location VALUES ('LE 2');
+INSERT INTO stock_location VALUES ('LE 3');
+INSERT INTO stock_location VALUES ('LE 4');
+INSERT INTO stock_location VALUES ('LE 5');
+INSERT INTO stock_location VALUES ('LE 6');
+
+
+
 /*
 login
 **/
