@@ -108,11 +108,6 @@ class WelcomeController {
         return "panels-wells";
     }  
     
-    @RequestMapping(method=RequestMethod.GET, path= "/stocklocation")
-    public String stocklocation() {
-        return "stocklocation";
-    }    
-
     @RequestMapping(method=RequestMethod.GET, path= "/typography")
     public String typography() {
         return "typography";

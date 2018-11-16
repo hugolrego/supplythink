@@ -14,10 +14,18 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 @Table(name = "stock_location")
 public class StockLocation extends BaseEntity{
-	
-	 @NotEmpty
+
+		@NotEmpty
 	    @Column(name = "description")
-	    private String description;	
+	    private String description;
+
+		public String getDescription() {
+			return description;
+		}
+
+		public void setDescription(String description) {
+			this.description = description;
+		}	
 	 
 	 
 	    //@OneToMany(cascade = CascadeType.ALL, mappedBy = "stock_location")

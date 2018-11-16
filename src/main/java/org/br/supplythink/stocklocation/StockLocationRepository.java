@@ -13,7 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 public interface StockLocationRepository extends Repository<StockLocation, Integer> {
 
 	    @Transactional(readOnly = true)
-	    @Cacheable("stock_location")
 	    Collection<StockLocation> findAll() throws DataAccessException;
 
 
