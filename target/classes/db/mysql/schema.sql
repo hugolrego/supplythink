@@ -57,11 +57,11 @@ CREATE TABLE  visits (
   description VARCHAR(255)
 );
 
-DROP TABLE stock_location_groups;
+DROP TABLE stock_location_type;
 
-CREATE TABLE stock_location_groups (
+CREATE TABLE stock_location_type (
   id int identity (1,1) primary key,
-  name VARCHAR(80)
+  description VARCHAR(80)
 );
 
 DROP TABLE stock_location;
@@ -69,6 +69,14 @@ DROP TABLE stock_location;
 CREATE TABLE stock_location (
   id int identity (1,1) primary key,
   description VARCHAR(80)
+);
+
+DROP TABLE stock_location_groups;
+
+CREATE TABLE stock_location_groups (
+  id_stock_location int,
+  id_type int,
+  groups int
 );
 
 

@@ -69,12 +69,15 @@
                                     <tr>
                                         <th>Id</th>
                                         <th>Description</th>
+                                        <td th:each="i : ${groupsStockLocation}" ><span th:text="${i}"></span> </td>
+                                        	
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr th:each="stocklocation : ${stocklocations}" class="odd gradeX">
 						               <td th:text="${stocklocation.id}"/>
                                        <td th:text="${stocklocation.description}"/>
+                                       <td th:each="agrupamento : ${stocklocation.stockLocationGroups}" th:text="${agrupamento.description}">
                                     </tr>
                                 </tbody>
                             </table>

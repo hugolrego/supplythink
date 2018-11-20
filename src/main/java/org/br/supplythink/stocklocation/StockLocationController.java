@@ -28,6 +28,7 @@ public class StockLocationController {
 	    @RequestMapping(path = "/stocklocation", method = RequestMethod.GET)
 	    public String getAllProducts(Model model) {
 	        model.addAttribute("stocklocations", stocklocationRepository.findAll());
+	        model.addAttribute("groupsStockLocation", GroupStockLocationEnum.values());
 	        return "stocklocation";
 	    }
 	    
