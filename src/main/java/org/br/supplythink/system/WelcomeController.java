@@ -13,37 +13,12 @@ class WelcomeController {
         return "welcome";
     }
 
-
-    @RequestMapping(method=RequestMethod.GET, path= "/pages")
-    public String pages() {
-        return "pages";
-    }    
-
-    @RequestMapping(method=RequestMethod.GET, path= "/data")
-    public String data() {
-        return "data";
-    }    
-
-    @RequestMapping(method=RequestMethod.GET, path= "/dist")
-    public String dist() {
-        return "dist";
-    }    
-
-    @RequestMapping(method=RequestMethod.GET, path= "/js")
-    public String js() {
-        return "js";
-    }    
-
-    @RequestMapping(method=RequestMethod.GET, path= "/less")
-    public String less() {
-        return "less";
-    }    
-
-    @RequestMapping(method=RequestMethod.GET, path= "/vendor")
-    public String vendor() {
-        return "vendor";
+    @RequestMapping("/changelanguage")
+    public String language() {
+        return "welcome";
     }
     
+
     /**
      * telas 
      * @return

@@ -9,7 +9,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import org.br.supplythink.model.BaseEntity;
-import org.br.supplythink.model.NamedEntity;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
