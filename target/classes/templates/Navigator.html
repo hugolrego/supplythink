@@ -152,7 +152,11 @@
                     </ul>
                     <!-- /.dropdown-tasks -->
                 </li>
-                <!-- /.dropdown -->
+                <!-- /.dropdown  
+                   
+                    ************************   INTERNACIONALIZACAO **************************          
+                
+                  -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="/">
                         <i class="fa fa-language fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -185,7 +189,11 @@
                     </ul>
                     <!-- /.dropdown-alerts -->
                 </li>
-                <!-- /.dropdown -->
+                <!-- /.dropdown 
+                   
+                    ************************   CONFIGURACAO USUÁRIO **************************          
+                
+                -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="/">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -222,6 +230,71 @@
                         <li>
                             <a href="/"><i class="fa fa-dashboard fa-fw"></i><label th:text="#{all.dashboard}" /></a>
                         </li>
+
+                        <li>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-sitemap fa-fw"></i><label th:text="#{all.gestaodedados}" /> <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="/"><label th:text="#{all.gestaodeitem}" /> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="/"><label th:text="#{all.item}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.itemgrupo1}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.itemgrupo2}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.itemgrupo3}" /></a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+		                        <li>
+		                            <a href="/"><label th:text="#{all.gestaodelocalestoque}" /> <span class="fa arrow"></span></a>
+		                            <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="stocklocation.html"><label noWrap th:text="#{all.stocklocation}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.stocklocationgrupo1}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.stocklocationgrupo2}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.stocklocationgrupo3}" /></a>
+                                        </li>
+                                    </ul>
+		                            
+		                        </li>
+                                <li>
+                                    <a href="/"><label th:text="#{all.dfu}" /></a>
+                                </li>
+                                <li>
+                                    <a href="/"><label th:text="#{all.sku}" /></a>
+                                </li>
+                                <li>
+                                    <a href="/"><label th:text="#{all.monitoramento}" /> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="/"><label th:text="#{all.relatoriodemanda}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.relatorioestoque}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.relatoriomape}" /></a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>                        
+                        
                         <li>
                             <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-bar-chart-o fa-fw"></i><label th:text="#{all.charts}" /><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
@@ -233,9 +306,6 @@
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="stocklocation.html"><i class="fa fa-table fa-fw"></i> <label th:text="#{all.stocklocation}" /></a>
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
@@ -264,54 +334,7 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-sitemap fa-fw"></i> Gestão de Produtos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="/">Gestão de item <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="/">Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Item Grupo 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Item Grupo 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Item Grupo 3</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="/">DFU</a>
-                                </li>
-                                <li>
-                                    <a href="/">SKU</a>
-                                </li>
-                                <li>
-                                    <a href="/">Acompanhamento <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="/">Relatório 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Relatório 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Relatório 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Relatório 4</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+
                         <li>
                             <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
