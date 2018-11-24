@@ -53,195 +53,77 @@ INSERT INTO visits VALUES (8, '2009-06-04', 'neutered');
 INSERT INTO visits VALUES (7, '2008-09-04', 'spayed');
 
 
-INSERT INTO stock_location_type VALUES ('LE Grupo 1');
-INSERT INTO stock_location_type VALUES ('LE Grupo 2');
-INSERT INTO stock_location_type VALUES ('LE Grupo 3');
-INSERT INTO stock_location_type VALUES ('LE Grupo 4');
-INSERT INTO stock_location_type VALUES ('LE Grupo 5');
-INSERT INTO stock_location_type VALUES ('LE Grupo 6');
-INSERT INTO stock_location_type VALUES ('LE Grupo 7');
-INSERT INTO stock_location_type VALUES ('LE Grupo 8');
-INSERT INTO stock_location_type VALUES ('LE Grupo 9');
-INSERT INTO stock_location_type VALUES ('LE Grupo 10');
-INSERT INTO stock_location_type VALUES ('LE Grupo 11');
-INSERT INTO stock_location_type VALUES ('LE Grupo 12');
+INSERT INTO stock_location_type VALUES ('São Paulo');
+INSERT INTO stock_location_type VALUES ('Sudeste');
+INSERT INTO stock_location_type VALUES ('Lojas Físicas');
+delete from stock_location_type where id > 3
 
+INSERT INTO stock_location VALUES ('Morumbi');
+INSERT INTO stock_location VALUES ('Vila Olimpia');
+INSERT INTO stock_location VALUES ('Bresser');
+INSERT INTO stock_location VALUES ('Ibirapuera');
+INSERT INTO stock_location VALUES ('Itaquera');
+INSERT INTO stock_location VALUES ('Sumaré');
+INSERT INTO stock_location VALUES ('Centro');
+INSERT INTO stock_location VALUES ('Pinheiros');
+INSERT INTO stock_location VALUES ('Santo Amaro');
+INSERT INTO stock_location VALUES ('Vila Madalena');
+INSERT INTO stock_location VALUES ('Brooklin');
+INSERT INTO stock_location VALUES ('Moema');
 
-INSERT INTO stock_location VALUES ('LE 1');
-INSERT INTO stock_location VALUES ('LE 2');
-INSERT INTO stock_location VALUES ('LE 3');
-INSERT INTO stock_location VALUES ('LE 4');
-INSERT INTO stock_location VALUES ('LE 5');
-INSERT INTO stock_location VALUES ('LE 6');
-INSERT INTO stock_location VALUES ('LE 7');
-INSERT INTO stock_location VALUES ('LE 8');
-INSERT INTO stock_location VALUES ('LE 9');
-INSERT INTO stock_location VALUES ('LE 10');
-INSERT INTO stock_location VALUES ('LE 11');
-INSERT INTO stock_location VALUES ('LE 12');
-
-
+delete from stock_location_groups
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (1,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (2,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (3,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (4,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (5,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (6,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (7,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (8,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (9,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (10,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (11,3,3);
 
 INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,1);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,2);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,3);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,4);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,5);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,6);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,7);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,8);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,9);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,10);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,11);
-INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,1,12);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,2,2);
+INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,3,3);
 
 
 /*
 login
 **/
-SELECT * FROM USUARIO_PERMISSAO
 
 insert into permissao (nome) values ('ROLE_VET');
 insert into permissao (nome) values ('ROLE_OWNER');
