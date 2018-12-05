@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/" onclick="Morris.Area();">Supply Think</a>
+                <a class="navbar-brand" href="/" onclick="Morris.Area();">Supply Think Solutions</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -232,7 +232,66 @@
                         </li>
 
                         <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-sitemap fa-fw"></i><label th:text="#{all.gestaodedados}" /> <span class="fa arrow"></span></a>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-gears fa-fw"></i><label th:text="#{all.gestaoeoperacao}" /> <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="/"><label th:text="#{all.estrategico}" /> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="/"><label th:text="#{all.item}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.itemgrupo1}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.itemgrupo2}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.itemgrupo3}" /></a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+		                        <li>
+		                            <a href="/"><label th:text="#{all.tatico}" /> <span class="fa arrow"></span></a>
+		                            <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="stocklocation.html"><label noWrap th:text="#{all.stocklocation}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.stocklocationgrupo1}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.stocklocationgrupo2}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.stocklocationgrupo3}" /></a>
+                                        </li>
+                                    </ul>
+		                            
+		                        </li>
+                                <li>
+                                    <a href="/"><label th:text="#{all.operacional}" /> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="/"><label th:text="#{all.relatoriodemanda}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.relatorioestoque}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><label th:text="#{all.relatoriomape}" /></a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+
+                        <li>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-sitemap fa-fw"></i><label th:text="#{all.cadastros}" /> <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
                                     <a href="/"><label th:text="#{all.gestaodeitem}" /> <span class="fa arrow"></span></a>
@@ -296,23 +355,31 @@
                         </li>                        
                         
                         <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-bar-chart-o fa-fw"></i><label th:text="#{all.charts}" /><span class="fa arrow"></span></a>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-search fa-fw"></i><label th:text="#{all.torrecontrole}" /><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="flot.html">Flot <label th:text="#{all.charts}" /></a>
+                                    <a href="interface.html"><label th:text="#{all.interface}" /></a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js <label th:text="#{all.charts}" /></a>
+                                    <a href="/"><label th:text="#{all.dataQuality}" /></a>
                                 </li>
+                                <li>
+                                    <a href="/"><label th:text="#{all.processo}" /></a>
+                                </li>
+                                <li>
+                                    <a href="/"><label th:text="#{all.kpi}" /></a>
+                                </li>
+
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="blank.html">Blank Page</a>
+                                </li>
                                 <li>
                                     <a href="panels-wells.html">Panels and Wells</a>
                                 </li>
@@ -331,16 +398,16 @@
                                 <li>
                                     <a href="grid.html">Grid</a>
                                 </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-
-                        <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
+                                 <li>
+                            		<a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        		</li>
                                 <li>
-                                    <a href="blank.html">Blank Page</a>
+                                    <a href="flot.html">Flot Charts</a>
                                 </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                                
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

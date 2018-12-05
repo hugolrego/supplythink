@@ -18,7 +18,7 @@ class WelcomeController {
         return "welcome";
     }
     
-
+    
     /**
      * telas 
      * @return
@@ -28,6 +28,11 @@ class WelcomeController {
         return "blank";
     }    
 
+    @RequestMapping(method=RequestMethod.GET, path= "/interface")
+    public String interfaceFlow() {
+        return "interface";
+    }    
+    
     @RequestMapping(method=RequestMethod.GET, path= "/buttons")
     public String buttons() {
         return "buttons";
