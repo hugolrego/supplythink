@@ -3,10 +3,7 @@ package org.br.supplythink.system;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Collection;
-import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
 import org.br.supplythink.integration.Upload;
 import org.springframework.stereotype.Controller;
@@ -42,11 +39,8 @@ class WelcomeController {
     	
     	List<Upload> interfaces = new ArrayList<Upload>();
 		Calendar data = Calendar.getInstance();
-		Random gerador = new Random();
-		
-//		data.add(Calendar.DATE, -50);
     	for(int i = 0; i < 50; i++){
-    		Upload e = new Upload(data.getTime(), gerador.nextInt(2), gerador.nextInt(2), gerador.nextInt(2), gerador.nextInt(2));
+    		Upload e = new Upload(data.getTime());
     		data.add(Calendar.DATE, -1);
     		interfaces.add(e);
     	}
@@ -56,7 +50,23 @@ class WelcomeController {
         return "interface";
     }    
     
-  
+    @RequestMapping(method=RequestMethod.GET, path= "/dataQuality")
+    public String dataquality(Model model) {
+    	
+    	List<Upload> interfaces = new ArrayList<Upload>();
+		Calendar data = Calendar.getInstance();
+    	for(int i = 0; i < 50; i++){
+    		Upload e = new Upload(data.getTime());
+    		data.add(Calendar.DATE, -1);
+    		interfaces.add(e);
+    	}
+    	
+        model.addAttribute("interfaces", interfaces);
+    	
+        return "dataQuality";
+    }    
+
+    
     
     @RequestMapping(method=RequestMethod.GET, path= "/buttons")
     public String buttons() {
