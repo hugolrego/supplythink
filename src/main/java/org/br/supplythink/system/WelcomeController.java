@@ -89,6 +89,11 @@ class WelcomeController {
         return "buttons";
     }    
 
+    @RequestMapping(method=RequestMethod.GET, path= "/gamification")
+    public String gamification() {
+        return "gamification";
+    }    
+    
     @RequestMapping(method=RequestMethod.GET, path= "/entrar")
     public String entrar() {
         return "entrar";
