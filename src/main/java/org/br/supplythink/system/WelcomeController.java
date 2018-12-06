@@ -47,6 +47,9 @@ class WelcomeController {
     	
         model.addAttribute("interfaces", interfaces);
     	
+        Calendar data2 = Calendar.getInstance();
+        model.addAttribute("ultimaAtualizacao", data2.getTime());
+        
         return "interface";
     }    
     
@@ -62,9 +65,22 @@ class WelcomeController {
     	}
     	
         model.addAttribute("interfaces", interfaces);
+		
+        Calendar data2 = Calendar.getInstance();
+        model.addAttribute("ultimaAtualizacao", data2.getTime());
     	
         return "dataQuality";
     }    
+    
+    
+    @RequestMapping(method=RequestMethod.GET, path= "/indicadoresControlTower")
+    public String indicadoresControlTower(Model model) {
+		Calendar data2 = Calendar.getInstance();
+        model.addAttribute("ultimaAtualizacao", data2.getTime());
+
+        return "indicadoresControlTower";
+    }    
+    
 
     
     
