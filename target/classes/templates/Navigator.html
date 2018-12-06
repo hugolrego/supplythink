@@ -170,13 +170,13 @@
                   -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="/">
-                        <i class="fa fa-language fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-globe fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
                         <li>
                             <a href="/changelanguage?lang=pt">
                                 <div>
-                                    <i class="fa fa-gear fa-fw"></i><label th:text="#{all.language.portuguese}" />
+                                    <i class="fa fa-language fa-fw"></i> <label th:text="#{all.language.portuguese}" />
                                     
                                 </div>
                             </a>
@@ -185,7 +185,7 @@
                         <li>
                             <a href="/changelanguage?lang=en">
                                 <div>
-                                    <i class="fa fa-gear fa-fw"></i><label th:text="#{all.language.english}" />
+                                    <i class="fa fa-language fa-fw"></i> <label th:text="#{all.language.english}" />
                                 </div>
                             </a>
                         </li>
@@ -193,7 +193,7 @@
                         <li>
                             <a href="/changelanguage?lang=de">
                                 <div>
-                                    <i class="fa fa-gear fa-fw"></i><label th:text="#{all.language.german}" />
+                                    <i class="fa fa-language fa-fw"></i> <label th:text="#{all.language.german}" />
                                 </div>
                             </a>
                         </li>
@@ -249,17 +249,12 @@
                                     <a href="/"><label th:text="#{all.estrategico}" /> <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/"><label th:text="#{all.item}" /></a>
+                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.gestaoMacro}" /> - (<label th:text="#{all.semestral}" />)</a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.itemgrupo1}" /></a>
+                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.gestaoMacro}" /> - (<label th:text="#{all.anual}" />)</a>
                                         </li>
-                                        <li>
-                                            <a href="/"><label th:text="#{all.itemgrupo2}" /></a>
-                                        </li>
-                                        <li>
-                                            <a href="/"><label th:text="#{all.itemgrupo3}" /></a>
-                                        </li>
+
                                     </ul>
                                     <!-- /.nav-third-level -->
                                 </li>
@@ -267,17 +262,15 @@
 		                            <a href="/"><label th:text="#{all.tatico}" /> <span class="fa arrow"></span></a>
 		                            <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="stocklocation.html"><label noWrap th:text="#{all.stocklocation}" /></a>
+                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.indicadores}" /> - <label th:text="#{all.kpi}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.stocklocationgrupo1}" /></a>
+                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.ofensores}" /> - <label th:text="#{all.grupos}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.stocklocationgrupo2}" /></a>
+                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.reuniaoPlaoAcao}" /></a>
                                         </li>
-                                        <li>
-                                            <a href="/"><label th:text="#{all.stocklocationgrupo3}" /></a>
-                                        </li>
+
                                     </ul>
 		                            
 		                        </li>
@@ -285,13 +278,13 @@
                                     <a href="/"><label th:text="#{all.operacional}" /> <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/"><label th:text="#{all.relatoriodemanda}" /></a>
+                                            <a href="/"><label th:text="#{all.metasDeVendas}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.relatorioestoque}" /></a>
+                                            <a href="/"><label th:text="#{all.pedidos}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.relatoriomape}" /></a>
+                                            <a href="/"><label th:text="#{all.pedidos}" /> - <label th:text="#{all.parceiros}" /></a>
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
