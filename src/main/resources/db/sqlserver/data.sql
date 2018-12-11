@@ -124,15 +124,19 @@ INSERT INTO stock_location_groups (id_stock_location, id_type,groups)VALUES (12,
 /*
 login
 **/
+insert into permissao (nome) values ('ROLE_STOCK');
+insert into permissao (nome) values ('ROLE_DEMAND');
+insert into permissao (nome) values ('ROLE_COLLABORATIVE');
+insert into permissao (nome) values ('ROLE_ALL');
+	
+insert into usuario (nome, login, senha, ativo) values ('Camilo-S', 'camilo', '$2a$10$IC3RnOh5nWI/NOsxhfMwreKn6Jz/0zy2QtzI.rQJ8Xc.yxBiAyaIO', 1);
+insert into usuario (nome, login, senha, ativo) values ('Leonardo-D', 'leonardo', '$2a$10$IC3RnOh5nWI/NOsxhfMwreKn6Jz/0zy2QtzI.rQJ8Xc.yxBiAyaIO', 1);
+insert into usuario (nome, login, senha, ativo) values ('Hugo-C', 'hugo', '$2a$10$IC3RnOh5nWI/NOsxhfMwreKn6Jz/0zy2QtzI.rQJ8Xc.yxBiAyaIO', 1);
 
-insert into permissao (nome) values ('ROLE_VET');
-insert into permissao (nome) values ('ROLE_OWNER');
-	
-insert into usuario (nome, login, senha, ativo) values ('Carlos', 'carlos', '$2a$10$JvyF9q/k/eYwXTVjc4Ay0OT/dCwjW14eT88q3e587jaENTvtt30s2', 1);
-insert into usuario (nome, login, senha, ativo) values ('Flávio', 'flavio', '$2a$10$JvyF9q/k/eYwXTVjc4Ay0OT/dCwjW14eT88q3e587jaENTvtt30s2', 1);
-	
 insert into usuario_permissao (usuario_id, permissao_id) values (1, 1);
-insert into usuario_permissao (usuario_id, permissao_id) values (1, 2);
-insert into usuario_permissao (usuario_id, permissao_id) values (2, 1);
+insert into usuario_permissao (usuario_id, permissao_id) values (1, 4);
 insert into usuario_permissao (usuario_id, permissao_id) values (2, 2);
+insert into usuario_permissao (usuario_id, permissao_id) values (2, 4);
+insert into usuario_permissao (usuario_id, permissao_id) values (3, 3);
+insert into usuario_permissao (usuario_id, permissao_id) values (3, 4);
 

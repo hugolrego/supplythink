@@ -15,6 +15,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
+//		.antMatchers("").hasAnyRole("ROLE_STOCK")
+//		.antMatchers("").hasAnyRole("ROLE_DEMAND")
+//		.antMatchers("").hasAnyRole("ROLE_COLLABORATIVE")
 		.anyRequest()
 		.authenticated()
 		.and()

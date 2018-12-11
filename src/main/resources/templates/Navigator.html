@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -27,16 +31,16 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="/">
                         <i class="fa fa-gamepad fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
-                    <ul class="dropdown-menu pull-right">
-                          <div class="panel-heading"><label th:text="#{all.rankingGamification}" /></div>
+                    <ul class="dropdown-menu dropdown-user">
+                          <div class="panel-heading"><span th:text="#{all.rankingGamification}" /></div>
                     
                     	   <table width="100%" class="table table-striped table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th><label th:text="#{all.posicao}" /></th>
-                                        <th><label th:text="#{all.participante}" /></th>
-                                        <th><label th:text="#{all.pontuacao}" /></th>
-                                        <th><label th:text="#{all.gamification.nivel}" /></th>
+                                        <th><span th:text="#{all.posicao}" /></th>
+                                        <th><span th:text="#{all.participante}" /></th>
+                                        <th><span th:text="#{all.pontuacao}" /></th>
+                                        <th><span th:text="#{all.gamification.nivel}" /></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -77,7 +81,7 @@
                         <li class="divider"></li>
                         <li>
                             <a class="text-center" href="/gamification.html">
-                                <strong><label th:text="#{all.vertodos}" /></strong>
+                                <strong><span th:text="#{all.vertodos}" /></strong>
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
@@ -176,7 +180,7 @@
                         <li>
                             <a href="/changelanguage?lang=pt">
                                 <div>
-                                    <i class="fa fa-language fa-fw"></i> <label th:text="#{all.language.portuguese}" />
+                                    <i class="fa fa-language fa-fw"></i> <span th:text="#{all.language.portuguese}" />
                                     
                                 </div>
                             </a>
@@ -185,7 +189,7 @@
                         <li>
                             <a href="/changelanguage?lang=en">
                                 <div>
-                                    <i class="fa fa-language fa-fw"></i> <label th:text="#{all.language.english}" />
+                                    <i class="fa fa-language fa-fw"></i> <span th:text="#{all.language.english}" />
                                 </div>
                             </a>
                         </li>
@@ -193,7 +197,7 @@
                         <li>
                             <a href="/changelanguage?lang=de">
                                 <div>
-                                    <i class="fa fa-language fa-fw"></i> <label th:text="#{all.language.german}" />
+                                    <i class="fa fa-language fa-fw"></i> <span th:text="#{all.language.german}" />
                                 </div>
                             </a>
                         </li>
@@ -210,12 +214,12 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="/"><i class="fa fa-user fa-fw"></i><label th:text="#{all.userprofile}" /></a>
+                        <li><a href="/"><i class="fa fa-user fa-fw"></i><span th:text="#{all.userprofile}" /></a>
                         </li>
-                        <li><a href="/"><i class="fa fa-gear fa-fw"></i><label th:text="#{all.settings}" /></a>
+                        <li><a href="/"><i class="fa fa-gear fa-fw"></i><span th:text="#{all.settings}" /></a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="/entrar?logout"><i class="fa fa-sign-out fa-fw"></i><label th:text="#{all.logout}" /></a>
+                        <li><a href="/entrar?logout"><i class="fa fa-sign-out fa-fw"></i><span th:text="#{all.logout}" /></a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -238,53 +242,53 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
-                            <a href="/"><i class="fa fa-dashboard fa-fw"></i> <label th:text="#{all.dashboard}" /></a>
+                        <li >
+                            <a href="/"><i class="fa fa-dashboard fa-fw"></i> <span th:text="#{all.dashboard}" /></a>
                         </li>
 
                         <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-gears fa-fw"></i> <label th:text="#{all.gestaoeoperacao}" /> <span class="fa arrow"></span></a>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-gears fa-fw"></i> <span th:text="#{all.gestaoeoperacao}" /> <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="/"><label th:text="#{all.estrategico}" /> <span class="fa arrow"></span></a>
+                                    <a href="/"><span th:text="#{all.estrategico}" /> <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.macro}" /> - (<label th:text="#{all.semestral}" />)</a>
+                                            <a href="/" style="white-space: nowrap"><span th:text="#{all.macro}" /> - (<span th:text="#{all.semestral}" />)</a>
                                         </li>
                                         <li>
-                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.macro}" /> - (<label th:text="#{all.anual}" />)</a>
+                                            <a href="/" style="white-space: nowrap"><span th:text="#{all.macro}" /> - (<span th:text="#{all.anual}" />)</a>
                                         </li>
 
                                     </ul>
                                     <!-- /.nav-third-level -->
                                 </li>
 		                        <li>
-		                            <a href="/"><label th:text="#{all.tatico}" /> <span class="fa arrow"></span></a>
+		                            <a href="/"><span th:text="#{all.tatico}" /> <span class="fa arrow"></span></a>
 		                            <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.indicadores}" /> - <label th:text="#{all.kpi}" /></a>
+                                            <a href="/" style="white-space: nowrap"><span th:text="#{all.indicadores}" /> - <span th:text="#{all.kpi}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.ofensores}" /> - <label th:text="#{all.grupos}" /></a>
+                                            <a href="/" style="white-space: nowrap"><span th:text="#{all.ofensores}" /> - <span th:text="#{all.grupos}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/" style="white-space: nowrap"><label th:text="#{all.reuniaoPlaoAcao}" /></a>
+                                            <a href="/" style="white-space: nowrap"><span th:text="#{all.reuniaoPlaoAcao}" /></a>
                                         </li>
 
                                     </ul>
 		                            
 		                        </li>
                                 <li>
-                                    <a href="/"><label th:text="#{all.operacional}" /> <span class="fa arrow"></span></a>
+                                    <a href="/"><span th:text="#{all.operacional}" /> <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/"><label th:text="#{all.metasDeVendas}" /></a>
+                                            <a href="/"><span th:text="#{all.metasDeVendas}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.pedidos}" /></a>
+                                            <a href="/"><span th:text="#{all.pedidos}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.pedidos}" /> - <label th:text="#{all.parceiros}" /></a>
+                                            <a href="/"><span th:text="#{all.pedidos}" /> - <span th:text="#{all.parceiros}" /></a>
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
@@ -295,61 +299,61 @@
 
 
                         <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-sitemap fa-fw"></i> <label th:text="#{all.cadastros}" /> <span class="fa arrow"></span></a>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-sitemap fa-fw"></i> <span th:text="#{all.cadastros}" /> <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="/"><label th:text="#{all.gestaodeitem}" /> <span class="fa arrow"></span></a>
+                                    <a href="/"><span th:text="#{all.gestaodeitem}" /> <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/"><label th:text="#{all.item}" /></a>
+                                            <a href="/"><span th:text="#{all.item}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.itemgrupo1}" /></a>
+                                            <a href="/"><span th:text="#{all.itemgrupo1}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.itemgrupo2}" /></a>
+                                            <a href="/"><span th:text="#{all.itemgrupo2}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.itemgrupo3}" /></a>
+                                            <a href="/"><span th:text="#{all.itemgrupo3}" /></a>
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
                                 </li>
 		                        <li>
-		                            <a href="/"><label th:text="#{all.gestaodelocalestoque}" /> <span class="fa arrow"></span></a>
+		                            <a href="/"><span th:text="#{all.gestaodelocalestoque}" /> <span class="fa arrow"></span></a>
 		                            <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="stocklocation.html"><label noWrap th:text="#{all.stocklocation}" /></a>
+                                            <a href="stocklocation.html"><span noWrap th:text="#{all.stocklocation}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.stocklocationgrupo1}" /></a>
+                                            <a href="/"><span th:text="#{all.stocklocationgrupo1}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.stocklocationgrupo2}" /></a>
+                                            <a href="/"><span th:text="#{all.stocklocationgrupo2}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.stocklocationgrupo3}" /></a>
+                                            <a href="/"><span th:text="#{all.stocklocationgrupo3}" /></a>
                                         </li>
                                     </ul>
 		                            
 		                        </li>
                                 <li>
-                                    <a href="/"><label th:text="#{all.dfu}" /></a>
+                                    <a href="/"><span th:text="#{all.dfu}" /></a>
                                 </li>
                                 <li>
-                                    <a href="/"><label th:text="#{all.sku}" /></a>
+                                    <a href="/"><span th:text="#{all.sku}" /></a>
                                 </li>
                                 <li>
-                                    <a href="/"><label th:text="#{all.monitoramento}" /> <span class="fa arrow"></span></a>
+                                    <a href="/"><span th:text="#{all.monitoramento}" /> <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/"><label th:text="#{all.relatoriodemanda}" /></a>
+                                            <a href="/"><span th:text="#{all.relatoriodemanda}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.relatorioestoque}" /></a>
+                                            <a href="/"><span th:text="#{all.relatorioestoque}" /></a>
                                         </li>
                                         <li>
-                                            <a href="/"><label th:text="#{all.relatoriomape}" /></a>
+                                            <a href="/"><span th:text="#{all.relatoriomape}" /></a>
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
@@ -359,19 +363,19 @@
                         </li>                        
                         
                         <li>
-                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-search fa-fw"></i> <label th:text="#{all.torrecontrole}" /><span class="fa arrow"></span></a>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-search fa-fw"></i> <span th:text="#{all.torrecontrole}" /><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="interface.html"><i class="fa fa-edit fa-fw"></i> <label th:text="#{all.interface}" /></a>
+                                    <a href="interface.html"><i class="fa fa-edit fa-fw"></i> <span th:text="#{all.interface}" /></a>
                                 </li>
                                 <li>
-                                    <a href="dataQuality.html"><i class="fa fa-database fa-fw"></i> <label th:text="#{all.dataQuality}" /></a>
+                                    <a href="dataQuality.html"><i class="fa fa-database fa-fw"></i> <span th:text="#{all.dataQuality}" /></a>
                                 </li>
                                 <li>
-                                    <a href="/"><i class="glyphicon glyphicon-random"></i> <label th:text="#{all.processo}" /></a>
+                                    <a href="/"><i class="glyphicon glyphicon-random"></i> <span th:text="#{all.processo}" /></a>
                                 </li>
                                 <li>
-                                    <a href="/indicadoresControlTower.html"><i class="fa fa-bar-chart-o fa-fw"></i> <label th:text="#{all.kpi}" /></a>
+                                    <a href="/indicadoresControlTower.html"><i class="fa fa-bar-chart-o fa-fw"></i> <span th:text="#{all.kpi}" /></a>
                                 </li>
 
                             </ul>

@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.List;
 
@@ -34,6 +35,7 @@ public class SmartSupplyUserDetailsService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
 		Connection connection = null;
+		System.out.println("login :" + login + " : "+ Calendar.getInstance().getTime());
 
 		try {
 			connection = dataSource.getConnection();

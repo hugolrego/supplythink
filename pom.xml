@@ -84,6 +84,11 @@
       <scope>test</scope>
     </dependency>
 
+	<dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+            <version>3.0.2.RELEASE</version>
+    </dependency>
 	
     <!-- Databases - Uses HSQL by default 
     <dependency>
