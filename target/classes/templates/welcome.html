@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">14</div>
-                                    <div>Ofensores Grupo</div>
+                                    <div><span th:text="#{all.ofensoresGrupo}" /></div>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">12</div>
-                                    <div>Daily operation</div>
+                                    <div style="white-space: nowrap"><span th:text="#{all.operacaoDiaria}" /></div>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">57</div>
-                                    <div>Program Follow-up</div>
+                                    <div style="white-space: nowrap"><span th:text="#{all.acompanhamentoPrograma}" /></div>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">18</div>
-                                    <div>Alerts - Control Tower</div>
+                                    <div style="white-space: nowrap"><span th:text="#{all.alertaTorreControle}" /></div>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
 			                <div class="col-lg-12">
 			                    <div class="panel panel-default">
 			                        <div class="panel-heading">
-			                            <i class="fa fa-bar-chart-o fa-fw"></i> <label th:text="#{all.dfu}" />
+			                            <i class="fa fa-bar-chart-o fa-fw"></i> <span th:text="#{all.dfu}" />
 			                        </div>
 			                        <!-- /.panel-heading -->
 			                        <div class="panel-body">
@@ -222,7 +222,7 @@
                     		 <div class="col-md-12">
 			                    <div class="panel panel-default">
 			                        <div class="panel-heading">
-			                            <i class="fa fa-bar-chart-o fa-fw"></i> <label th:text="#{all.estoque}" />
+			                            <i class="fa fa-bar-chart-o fa-fw"></i> <span th:text="#{all.estoque}" />
 			                        </div>
 			                        <!-- /.panel-heading -->
 			                        <div class="panel-body">
@@ -288,7 +288,7 @@
                     		 <div class="col-md-12">
 			                    <div class="panel panel-default">
 			                        <div class="panel-heading">
-			                            <i class="fa fa-bar-chart-o fa-fw"></i> <label th:text="#{all.pedidos}" />
+			                            <i class="fa fa-bar-chart-o fa-fw"></i> <span th:text="#{all.pedidos}" />
 			                        </div>
 			                        <!-- /.panel-heading -->
 			                        <div class="panel-body">
@@ -301,48 +301,46 @@
                     
 						<script type="text/javascript">
                            $(document).ready(function() {
-                               Morris.Area({
+                               Morris.Bar({
                                    element: 'pedido-example',
                                    data: [{
-                                       period: '2018-11-25',
-                                       histProduto: 546579,
+                                       period: 'Jan',
+                                       anoAnterior: 546579,anoAtual: 549887
                                    }, {
-                                       period: '2018-11-26',
-                                       histProduto: 987954,
+                                       period: 'fev',
+                                       anoAnterior: 987954,anoAtual: 655468
                                    }, {
-                                       period: '2018-11-27',
-                                       histProduto: 654878,
+                                       period: 'mar',
+                                       anoAnterior: 654878,anoAtual: 988798
                                    }, {
-                                       period: '2018-11-28',
-                                       histProduto: 564978,
+                                       period: 'abr',
+                                       anoAnterior: 564978,anoAtual: 654643
                                    }, {
-                                       period: '2018-11-29',
-                                       histProduto: 654875,
+                                       period: 'jun',
+                                       anoAnterior: 654875,anoAtual: 546498
                                    }, {
-                                       period: '2018-11-30',
-                                       histProduto: 554987,
+                                       period: 'jul',
+                                       anoAnterior: 554987,anoAtual: 345678
                                    }, {
-                                       period: '2018-12-01',
-                                       histProduto: 654879,
+                                       period: 'ago',
+                                       anoAnterior: 654879,anoAtual: 987987
                                    }, {
-                                       period: '2018-12-02',
-                                       histProduto: 354654,
+                                       period: 'set',
+                                       anoAnterior: 354654,anoAtual: 657895
                                    }, {
-                                       period: '2018-12-03',
-                                       histProduto: 465497,
+                                       period: 'out',
+                                       anoAnterior: 465497,anoAtual: 657876
                                    }, {
-                                       period: '2018-12-04',
-                                       histProduto: 987654,
+                                       period: 'nov',
+                                       anoAnterior: 987654,anoAtual: 987541
                                    }],
                                    xkey: 'period',
-                                   ykeys: ['histProduto'],
-                                   labels: ['Stoc'],
-                                   lineColors:     ['#D2691E'],
-                                   fillOpacity:    0.3,
+                                   ykeys: ['anoAnterior','anoAtual'],
+                                   labels: ['2017','2018'],
+                                   barColors:     ['#00cc44','#66a3ff'],
                                    behaveLikeLine: true,
                                    lineWidth:      2,
                                    pointSize:      6,
-                                   gridLineColor:  '#D2691E',
                                    resize:         true
                                    
                                });
@@ -357,44 +355,44 @@
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i>KPI
+                            <i class="fa fa-bell fa-fw"></i><span th:text="#{all.kpi}" />
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="list-group">
                                 <a href="/" class="list-group-item">
-                                    <i class="fa fa-angle-right fa-fw"></i><label th:text="#{all.metasDeVendas}" />
+                                    <i class="fa fa-angle-right fa-fw"></i><span th:text="#{all.metasDeVendas}" />
                                     
                                     <span class="pull-right text-muted small"><em>50</em>
                                     </span>
                                 </a>
                                 <a href="/" class="list-group-item">
-                                    <i class="fa fa-angle-right fa-fw"></i> % <label th:text="#{all.metasDeVendas}" />
+                                    <i class="fa fa-angle-right fa-fw"></i> % <span th:text="#{all.metasDeVendas}" />
                                     <span class="pull-right text-muted small"><em>90</em>
                                     </span>
                                 </a>
                                 <a href="/" class="list-group-item">
-                                    <i class="fa fa-angle-right fa-fw"></i><label th:text="#{all.metaEstoque}" />
+                                    <i class="fa fa-angle-right fa-fw"></i><span th:text="#{all.metaEstoque}" />
                                     <span class="pull-right text-muted small"><em>90</em>
                                     </span>
                                 </a>
                                 <a href="/" class="list-group-item">
-                                    <i class="fa fa-angle-right fa-fw"></i>% <label th:text="#{all.metaEstoque}" />
+                                    <i class="fa fa-angle-right fa-fw"></i>% <span th:text="#{all.metaEstoque}" />
                                     <span class="pull-right text-muted small"><em>10</em>
                                     </span>
                                 </a>
                                 <a href="/" class="list-group-item">
-                                    <i class="fa fa-angle-right fa-fw"></i><label th:text="#{all.giroEstoque}" /> (<label th:text="#{all.ano}" />)
+                                    <i class="fa fa-angle-right fa-fw"></i><span th:text="#{all.giroEstoque}" /> (<span th:text="#{all.ano}" />)
                                     <span class="pull-right text-muted small"><em>20</em>
                                     </span>
                                 </a>
                                 <a href="/" class="list-group-item">
-                                    <i class="fa fa-angle-right fa-fw"></i><label th:text="#{all.ruptura}" />
+                                    <i class="fa fa-angle-right fa-fw"></i><span th:text="#{all.ruptura}" />
                                     <span class="pull-right text-muted small"><em>5%</em>
                                     </span>
                                 </a>
                                 <a href="/" class="list-group-item">
-                                    <i class="fa fa-angle-right fa-fw"></i><label th:text="#{all.cobertura}" /> (<label th:text="#{all.dias}" />) 
+                                    <i class="fa fa-angle-right fa-fw"></i><span th:text="#{all.cobertura}" /> (<span th:text="#{all.dias}" />) 
                                     <span class="pull-right text-muted small"><em>50</em>
                                     </span>
                                 </a>

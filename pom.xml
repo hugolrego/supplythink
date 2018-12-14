@@ -29,6 +29,8 @@
 
     <thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
     <cobertura.version>2.7</cobertura.version>
+	<thymeleaf-extras-java8time.version>3.0.0.RELEASE</thymeleaf-extras-java8time.version>
+	<thymeleaf-layout-dialect.version>2.1.2</thymeleaf-layout-dialect.version>
 
   </properties>
 
@@ -87,7 +89,7 @@
 	<dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity4</artifactId>
-            <version>3.0.2.RELEASE</version>
+            <version>3.0.1.RELEASE</version>
     </dependency>
 	
     <!-- Databases - Uses HSQL by default 

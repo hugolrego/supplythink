@@ -346,13 +346,13 @@
                                 <li>
                                     <a href="/"><span th:text="#{all.monitoramento}" /> <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
-                                        <li>
+                                        <li sec:authorize="hasRole('ROLE_DEMAND')" >
                                             <a href="/"><span th:text="#{all.relatoriodemanda}" /></a>
                                         </li>
-                                        <li>
+                                        <li sec:authorize="hasRole('ROLE_STOCK')" >
                                             <a href="/"><span th:text="#{all.relatorioestoque}" /></a>
                                         </li>
-                                        <li>
+                                        <li >
                                             <a href="/"><span th:text="#{all.relatoriomape}" /></a>
                                         </li>
                                     </ul>
@@ -361,6 +361,17 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>                        
+
+                        <li>
+                            <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-search fa-fw"></i> <span th:text="#{all.rankingGamification}" /><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li style="white-space: nowrap">
+                                    <a href="gamification.html"><i class="fa fa-edit fa-fw"></i> <span th:text="#{all.gamification}" /></a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
                         
                         <li>
                             <a href="JavaScript:$('#side-menu').metisMenu()"><i class="fa fa-search fa-fw"></i> <span th:text="#{all.torrecontrole}" /><span class="fa arrow"></span></a>
@@ -404,7 +415,7 @@
                                     <a href="icons.html"> Icons</a>
                                 </li>
                                 <li>
-                                    <a href="grid.html">Grid</a>
+                                    <a href="grid.html"> Grid</a>
                                 </li>
                                  <li>
                             		<a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
